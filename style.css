@@ -1,0 +1,66 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+body,
+html {
+   height: 100%;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   background-color: #f5f6fa;
+}
+
+main {
+   display: flex;
+   flex: 1 1 auto;
+   gap: 50px;
+}
+.nav {
+   border-right: 1px solid #d7dbec;
+}
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   width: 250px;
+   background-color: #fff;
+}
+h2 {
+   text-align: center;
+   width: 100%;
+   padding-bottom: 20px;
+}
+.content {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   flex-direction: column;
+   padding: 40px;
+}
+.content img {
+   display: block;
+   width: 700px;
+   height: 500px;
+}
+
+.text {
+   padding-top: 20px;
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ccc;
+   padding: 30px;
+}
+
+.footer span {
+   display: block;
+   padding-left: 20px;
+   background: url("./images/copyright-svgrepo-com.svg") 1px 2px no-repeat;
+   background-size: 15px 15px;
+}

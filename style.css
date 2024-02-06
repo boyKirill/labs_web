@@ -56,6 +56,7 @@ h2 {
    justify-content: center;
    background-color: #ccc;
    padding: 30px;
+	width: 100%;
 }
 
 .footer span {

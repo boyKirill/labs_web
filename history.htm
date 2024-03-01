@@ -8,23 +8,46 @@
 	</head>
 	<body>
 		<div class="container">
-		<main>
 			<section class="nav">
-				<menu class="menu">
-					<li class="menu__item"><a href="index.htm">О Деревне</a></li>
-					<li class="menu__item"><a href="history.htm">История</a></li>
+				<a class="burger" title="Это меню-бургер" href="#menu"><i
+						class="fa-solid fa-bars"></i></a>
+				<menu id="menu" class="menu">
+					<div class="highlight"></div>
+					<li class="menu__item">
+						<a href="index.htm">О Деревне</a>
+					</li>
+					<li class="menu__item">
+						<a href="history.htm">История</a>
+						<ul>
+							<li><a href="history.htm#first">Начало Истории</a></li>
+							<li><a href="history.htm#second">Население</a></li>
+							<li><a href="history.htm#third">Интересные факты</a></li>
+							<li><a href="history.htm#fourth">Образовние колхоза</a></li>
+						</ul>
+					</li>
 					<li class="menu__item"><a
-							href="gallery.htm">Галерея</a></li>
+							href="gallery.htm">Галерея</a>
+					</li>
+					<a href="#" class="close">
+						<i class="fa-solid fa-xmark"></i>
+					</a>
 				</menu>
-				<menu class="menu">
-					<li><a href="index.htm">На главную</a></li>
-					<li><a href="index.htm">Назад</a></li>
-					<li><a href="gallery.htm">Далее</a></li>
-				</menu>
+				<!-- <menu>
+					<img class="map-img" src="images/menu.png" alt="Workplace"
+						usemap="#workmap">
+
+					<map name="workmap">
+						<area shape="rect" coords="0 0 300 100"
+							href="index.htm">
+						<area shape="rect" coords=" 0 100 300 200" href="history.htm">
+						<area shape="rect " coords="0 200 300 300" href="gallery.htm">
+					</map>
+				</menu> -->
 			</section>
 			<section class="content">
 				<h2>История</h2>
 				<div class="text">
+					<h3 id="#first">Начало истории</h3>
 					<p>В Норусовской стороне немало красивых деревень. Дома расположились по
 						берегам больших оврагов, по дну которых текут небольшие речки, а вокруг
 						сады, сады. Одна из них деревня Эпшики. Встретились мы с 77-летней
@@ -62,6 +85,7 @@
 						запасное поле, часть которого выделялась отставным солдатам и
 						моло­доженам, Вӗт хурӑн вӑрманӗ — мелкая березовая роща.</p>
 					<br>
+					<h id="#second">Население</h>
 					<p>В переписи 1859 года деревня Эпшики указана как выселок Ялдры, значит,
 						сюда люди переселились из разных населенных пун­ктов и местностей. В
 						августе 1897 года в деревне сгорело 40 домов, осталось только 15 хозяйств
@@ -70,6 +94,7 @@
 						настоящего вре­мени своим расположением и красотой восхищает
 						гостей.</p>
 					<br>
+					<h3 id="#third">Интересные факты</h3>
 					<p>В конце XIX века, примерно в 100 метрах от вышеназ­ванного дуба,
 						крестьянин Федор Никифоров построил боль­шой дом. У него была ветряная
 						мельница. За это пришлось расплачиваться продолжателям рода. Сына Егора
@@ -110,6 +135,7 @@
 						Пушкино. По неизвестной причине реше­ние по изменению названия деревни
 						принято не было.</p>
 					<br>
+					<h3 id="#fourth">Образование колхоза</h3>
 					<p>В 1931 году в деревне Эпшики организовали сельскохозяй­ственную артель
 						"Пучах"(Колос), но хозяйство быстро распа­лось, осталось только несколько
 						дворов. Через год артель пере­именовали в "Победу", председателем избрали
@@ -128,10 +154,63 @@
 						"Россию" вошли Шинеры, Чириш-Шинеры, Шоркасы, Ишлей, а в "Искру" —
 						Азим-Сирма, Тувалькино и Эпшики.</p>
 				</div>
+				<div>
+					<table>
+						<colgroup>
+							<col span="4"
+								style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+						</colgroup>
+						<tr>
+							<th>№ п/п</th>
+							<th>Название</th>
+							<th>Количество домов</th>
+							<th>Количество жителей</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Эпшики</td>
+							<td>58</td>
+							<td>134</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Тувальккино</td>
+							<td>71</td>
+							<td>189</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Азим-Сирма</td>
+							<td>146</td>
+							<td>289</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Юманаи</td>
+							<td>127</td>
+							<td>306</td>
+						</tr>
+					</table>
+				</div>
+				<div class="nexter">
+					<a href="index.htm"><i class="fa-solid fa-arrow-left"></i> Назад</a>
+					<a href="history.htm">Далее <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
 			</section>
-		</main>
-	</div>
-		<footer class="footer"><span>Мой сайт. Разработчик - Владимиров
-				Кирилл</span></footer>
+			<footer class="footer">
+
+				<div class="information">Мой сайт. Разработчик -
+					Владимиров
+					Кирилл</div>
+				<div class="flag">
+					<div class="title">
+						Этот знак указывает, что сайт создан вы России
+					</div>
+				</div>
+
+			</footer>
+		</div>
+		<script src="https://kit.fontawesome.com/ee7eef405c.js"
+			crossorigin="anonymous"></script>
 	</body>
 </html>
